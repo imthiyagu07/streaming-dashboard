@@ -1,36 +1,134 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Streaming Dashboard
 
-## Getting Started
+A modern streaming dashboard inspired by Netflix/Hulu, built with Next.js 16, TypeScript, Tailwind CSS, and the TMDB API.
+This project displays trending movies, popular categories, a hero banner, and detailed movie pages with full metadata.
 
-First, run the development server:
+* Live Demo: Add your Vercel URL here
+* GitHub Repo: [Add your repo link here](https://github.com/imthiyagu07/streaming-dashboard)
+
+## Tech Stack
+* Next.js 16 (App Router)
+
+* TypeScript
+
+* Tailwind CSS
+
+* TMDB API (v4 Auth)
+
+* Server Components + Client Components
+
+* Image Optimization (Next/Image)
+
+* Deployed on Vercel
+
+## Features
+* Fully functional streaming-style dashboard
+
+* Hero Banner
+
+* Dynamic Movie Details Page
+
+* API Integration
+
+* Responsive UI
+
+## Folder Structure
+
+```bash
+app/
+  layout.tsx
+  page.tsx
+  globals.css
+  movie/
+    [id]/
+      page.tsx
+
+components/
+    Header.tsx
+    HeroBanner.tsx
+    MovieRow.tsx
+
+lib/
+  tmdb.ts
+
+types/
+  movie.ts
+
+public/
+  favicon.ico
+
+next.config.js
+README.md
+AI_Report.md
+```
+
+## Environment Variables
+
+Create a .env.local file in the project root:
+
+```bash
+TMDB_ACCESS_TOKEN=your_tmdb_v4_bearer_token
+NEXT_PUBLIC_IMAGE_BASE=https://image.tmdb.org/t/p
+```
+
+## Running the Project Locally
+
+* Install dependencies
+
+```bash
+npm install
+# or
+pnpm install
+```
+
+* Run development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Build for production
 
-## Learn More
+```bash
+npm run build 
+npm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Deploying to vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Push your project to GitHub
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. Go to: https://vercel.com
 
-## Deploy on Vercel
+3. Click New Project → Import GitHub Repo
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Add Environment Variables:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+TMDB_ACCESS_TOKEN=your_token
+NEXT_PUBLIC_IMAGE_BASE=https://image.tmdb.org/t/p
+```
+
+5. Deploy
+
+## What I learn
+
+* Using Next.js Server Components for data fetching
+
+* Working with async params in dynamic routes (Next.js 15+)
+
+* Authenticating with TMDB using Bearer Token (v4)
+
+* Handling missing data & fallbacks
+
+* Responsive layout using Tailwind
+
+* Hiding scrollbars with custom utilities
+
+* Using next/image for optimized images
