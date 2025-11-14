@@ -3,8 +3,8 @@
 A modern streaming dashboard inspired by Netflix/Hulu, built with Next.js 16, TypeScript, Tailwind CSS, and the TMDB API.
 This project displays trending movies, popular categories, a hero banner, and detailed movie pages with full metadata.
 
-* Live Demo: Add your Vercel URL here
-* GitHub Repo: [Add your repo link here](https://github.com/imthiyagu07/streaming-dashboard)
+* Live Demo: https://streaming-dashboard-xi.vercel.app/
+* GitHub Repo: [GitHub Repo](https://github.com/imthiyagu07/streaming-dashboard)
 
 ## Tech Stack
 * Next.js 16 (App Router)
